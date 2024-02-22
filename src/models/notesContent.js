@@ -10,7 +10,7 @@ const contentScema = new  mongoose.Schema({
         ref: 'User',
         required:true
     }
-})
+}, {timestamps:true})
 
 const notesContent = mongoose.model('notesContent' , contentScema);
 module.exports = notesContent;

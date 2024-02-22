@@ -8,8 +8,11 @@ const userScema = new mongoose.Schema({
     email:{
         type:String,
         required: true
+    },
+    otp:{
+        type:String
     }
-});
+}, {timestamps:true});
 
 const User = mongoose.model('User' , userScema);
 module.exports = User;
